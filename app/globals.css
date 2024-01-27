@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.logo-text {
+  color: #000;  
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-btn {
+  display: flex;
+  padding: 9px 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
+  color: #FAFAFA;
+  font-weight: bold;
+}
+
+.home-h1 {
+  color: var(--Gray-gray-900, #1A202C);
+  /* Headings/Lite-h1 */
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 71px; /* 157.778% */
+}
+
+.color-span {
+  background: linear-gradient(135deg,#FF39A7 0,#E265AF 16%,#9F5DE6 33%,#655BE2 50%,#9F5DE6 67%,#E265AF 84%,#FF39A7 100%);
+  -webkit-background-clip: text; 
+  background-size: 200% auto;
+  display: inline;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  transform: translateZ(0);
+  -webkit-box-decoration-break: clone;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 71px;
+}
+
+.bold-span {
+  font-weight: bold;
+
+}
+
+.home-p {
+  color: var(--Gray-gray-700, #4A5568);
+  /* Paragraphs/default-lg */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 200% */
+  margin-bottom: 30px;
+}
+
+.home-a {
+  padding: 14px 25px;
+  border-radius: 5px;
+  background: #3D63EA;
+  /* Btn-Shadow */
+  box-shadow: 0px 4px 49px 0px rgba(0, 0, 0, 0.15);
+  color: #FAFAFA;
+  font-weight: bold;
+}
+
+.circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+  position: absolute;
+  right: 110;
+  z-index: 1;
+}
+
+@keyframes shine {
+  to {
+      background-position: 200% center;
+      will-change: background-position
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .home-text {
+    margin-inline: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+  .home-img {
+    margin-inline: auto;
+    width: 550px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-h1 {
+    font-size: 36px;
+  }
+  .home-p {
+    font-size: 16px;
+  }
+  .home-img {
+    margin-top: 30px;
+  }
+  .logo-text {
+    display: none;
+  }
+}
